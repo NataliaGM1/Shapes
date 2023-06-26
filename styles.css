@@ -1,0 +1,73 @@
+h1 {
+    text-align: center;
+}
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .triangle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transition: 0.3s;
+    margin-right: 20px;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transition: 0.3s;
+    margin-right: 20px;
+  }
+
+  .square {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transition: 0.3s;
+    margin-right: 20px;
+  }
+  
+  #triangulo {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid yellow;
+  }
+  
+  #cuadrado {
+    background-color: red;
+  }
+  
+  #circulo {
+    background-color: purple;
+    border-radius: 50%;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+  #resetButton {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .btn_reset {
+    height: 2em;
+    display: grid;
+    justify-content: center;
+    padding: 2em;
+    margin-bottom: 1000px;
+
+  }
+
+  .shape :hover{
+    align-self: flex-start;
+  }
