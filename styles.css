@@ -3,71 +3,48 @@ h1 {
 }
 
 
-#container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .triangle {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    transition: 0.3s;
-    margin-right: 20px;
-  }
-  
-  .circle {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    transition: 0.3s;
-    margin-right: 20px;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+}
 
-  .square {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    transition: 0.3s;
-    margin-right: 20px;
-  }
-  
-  #triangulo {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid yellow;
-  }
-  
-  #cuadrado {
-    background-color: red;
-  }
-  
-  #circulo {
-    background-color: purple;
-    border-radius: 50%;
-  }
-  
-  .hide {
-    display: none;
-  }
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid yellow;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-right: 20px;
+}
 
-  #resetButton {
-    margin-top: 20px;
-    text-align: center;
-  }
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-right: 20px;
+}
 
-  .btn_reset {
-    height: 2em;
-    display: grid;
-    justify-content: center;
-    padding: 2em;
-    margin-bottom: 1000px;
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+}
 
-  }
+.triangle:hover, .square:hover, .circle:hover {
+  background-color: lightgreen;
+  transform: translateY(-5px);
+}
 
-  .shape :hover{
-    align-self: flex-start;
-  }
+#resetButton {
+  text-align: center;
+  margin-left: 700px;
+  display: grid;
+  justify-content: center;
+  padding: 5px; 
+  margin-bottom: 1000px;
+}
+

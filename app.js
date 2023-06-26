@@ -1,22 +1,30 @@
-const triangulo = document.getElementById("triangulo");
-const cuadrado = document.getElementById("cuadrado");
-const circulo = document.getElementById("circulo");
-const resetButton = document.getElementById("resetButton");
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const triangle = document.getElementById("triangle");
+  const square = document.getElementById("square");
+  const circle = document.getElementById("circle");
+
+  
+  triangle.addEventListener("click", function() {
+    triangle.style.display = "none";
+  });
+
+  square.addEventListener("click", function() {
+    square.style.display = "none";
+  });
+
+  circle.addEventListener("click", function() {
+    circle.style.display = "none";
+  });
+
+  
+  const resetButton = document.getElementById("resetButton");
 
 
-function handleClick(event) {
-    event.target.style.display = "none";
-  }
-
-  function handleReset() {
-    triangulo.style.display = "block";
-    cuadrado.style.display = "block";
-    circulo.style.display = "block";
-  }
-
-  triangulo.addEventListener("click", handleClick);
-cuadrado.addEventListener("click", handleClick);
-circulo.addEventListener("click", handleClick);
-
-
-resetButton.addEventListener("click", handleReset);
+  resetButton.addEventListener("click", function() {
+    triangle.style.display = "block";
+    square.style.display = "block";
+    circle.style.display = "block";
+  });
+});
